@@ -1,7 +1,5 @@
 {
-  "configs": [
-    "cicd-auto-connected-app.xml"
-  ],
+  "configs": [],
   "secureProperties": [],
   "supportedJavaVersions": [],
   "redeploymentEnabled": true,
@@ -13,8 +11,7 @@
     "attributes": {
       "exportedPackages": [],
       "exportedResources": [
-        "log4j2.xml",
-        "cicd-auto-connected-app.xml"
+        "log4j2.xml"
       ]
     }
   },
