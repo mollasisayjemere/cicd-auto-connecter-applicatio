@@ -14,11 +14,15 @@ http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/
 		<ee:transform doc:name="Transform Message" doc:id="f36805fe-f0cf-4700-b8a2-71dffc5024e9" >
 			<ee:message >
 				<ee:set-payload ><![CDATA[%dw 2.0
-output application/java
+output application/json
 ---
-{
-	"message":"cicd auto connected deployed successful"
-}]]></ee:set-payload>
+	{
+		"message1": 
+		
+		"message":"cicd auto connected deployed successful"
+			
+	}
+]]></ee:set-payload>
 			</ee:message>
 		</ee:transform>
 		<logger level="INFO" doc:name="Logger" doc:id="f0ab7664-1ebc-4a33-84c9-690c73bd68ac" message="#[payload]"/>
